@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SaniPrint — Create Anything. 3D Print Manufacturing, Pleven, Bulgaria</title>
+<meta name="description" content="SaniPrint turns product ideas, files, sketches, and specifications into production-ready 3D printed parts. FDM print farm in Pleven, Bulgaria. B2B production runs and custom orders, delivered across Europe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="SaniPrint — Create Anything">
+<meta property="og:description" content="Production-ready 3D printed parts. FDM print farm in Pleven, Bulgaria. Delivered across Europe.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saniprint.com">
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <div class="wrap header-inner">
+    <a class="logo" href="/">SANIPRINT<span>.COM</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">MENU</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#b2b">B2B</a>
+      <a href="sanicreate.html">SaniCreate</a>
+      <a href="who-we-are.html">Who we are</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn" href="#simulator">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" style="padding-top:0;padding-bottom:0">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="section-label">FDM print farm — Pleven, Bulgaria</div>
+      <h1>CREATE<br>ANYTHING</h1>
+      <p class="lede" style="margin-bottom:22px">SaniPrint turns product ideas, files, sketches, and specifications into production-ready 3D printed parts.</p>
+      <p class="typeline">We print <span id="typeTarget"></span><span class="cursor" aria-hidden="true"></span></p>
+      <div class="hero-ctas">
+        <a class="btn" href="#simulator">Start a B2B project</a>
+        <a class="btn ghost" href="sanicreate.html">Open SaniCreate</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg id="heroObj" viewBox="0 0 400 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- object builds layer by layer, bottom to top -->
+        <g stroke="#0a0a0a" stroke-width="1.5">
+          <g id="layers"></g>
+        </g>
+        <line x1="40" y1="400" x2="360" y2="400" stroke="#e8e8e7" stroke-width="1"/>
+      </svg>
+      <div class="hero-meta">
+        <span id="layerCount">LAYER 000 / 048</span>
+        <span>0.20 MM — PLA</span>
+        <span id="pct">0%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-label reveal">Services</div>
+    <h2 class="reveal">What we manufacture</h2>
+    <p class="lede reveal" style="margin-bottom:50px">One part or a thousand. You send a file, a sketch, or a description. We handle review, production, quality control, and shipping.</p>
+    <div class="svc-grid">
+      <div class="svc reveal"><div class="num">S/01</div><h3>Rapid prototyping</h3><p>Working prototypes in days, not weeks. Test the fit, revise the file, print again.</p></div>
+      <div class="svc reveal"><div class="num">S/02</div><h3>Production runs</h3><p>Small and medium series, batched across the farm and inspected per unit.</p></div>
+      <div class="svc reveal"><div class="num">S/03</div><h3>Custom manufacturing</h3><p>One-off parts, enclosures, brackets, jigs, and components built to your spec.</p></div>
+      <div class="svc reveal"><div class="num">S/04</div><h3>White-label products</h3><p>We produce, you sell under your brand. Packaging support included.</p></div>
+      <div class="svc reveal"><div class="num">S/05</div><h3>Replacement parts</h3><p>Discontinued or broken component? We reproduce it from a file, a sample, or a drawing.</p></div>
+      <div class="svc reveal"><div class="num">S/06</div><h3>Product development</h3><p>Printability review, wall thickness, tolerances, and geometry advice before production.</p></div>
+      <div class="svc reveal"><div class="num">S/07</div><h3>Retail &amp; decor products</h3><p>Lamps, vases, organizers, and display pieces from our catalog or your design.</p></div>
+      <div class="svc reveal"><div class="num">S/08</div><h3>Packaging &amp; displays</h3><p>Counter displays, product stands, and packaging inserts for retail environments.</p></div>
+      <div class="svc reveal"><div class="num">S/09</div><h3>Recurring B2B production</h3><p>Standing orders on a schedule. Same part, same quality, every month.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="on-dark">
+  <div class="wrap">
+    <div class="section-label reveal">Process</div>
+    <h2 class="reveal">How it works</h2>
+    <div class="steps">
+      <div class="step reveal"><div class="num">01</div><h3>Send a file, sketch, or description</h3><p>STL, OBJ, 3MF — or just a photo and dimensions. You don't need a finished model to start.</p></div>
+      <div class="step reveal"><div class="num">02</div><h3>We review the design</h3><p>Geometry, wall thickness, supports, tolerances. We flag problems before anything prints.</p></div>
+      <div class="step reveal"><div class="num">03</div><h3>Select material, size, quantity</h3><p>PLA or PETG, layer height from 0.05 to 0.3 mm, single or multi-color via AMS.</p></div>
+      <div class="step reveal"><div class="num">04</div><h3>Receive cost and production estimate</h3><p>A clear number and a realistic date. No hidden fees added later.</p></div>
+      <div class="step reveal"><div class="num">05</div><h3>Confirm the order</h3><p>You approve the quote. We schedule the job across the farm.</p></div>
+      <div class="step reveal"><div class="num">06</div><h3>Production begins</h3><p>Large orders run in parallel on multiple machines to keep turnaround short.</p></div>
+      <div class="step reveal"><div class="num">07</div><h3>Quality control</h3><p>Every batch passes SQC inspection: dimensional accuracy, surface quality, structural integrity.</p></div>
+      <div class="step reveal"><div class="num">08</div><h3>Delivery</h3><p>Packed and shipped with tracking, across Bulgaria and Europe.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- B2B -->
+<section id="b2b">
+  <div class="wrap">
+    <div class="section-label reveal">B2B production</div>
+    <h2 class="reveal">Your outsourced manufacturing arm</h2>
+    <div class="b2b-cols">
+      <div class="reveal">
+        <p class="lede">You sell the product. We make it, check it, pack it, and ship it — to your warehouse, your storefront, or directly to your customer.</p>
+        <div class="tag-list">
+          <span class="tag">Product brands</span><span class="tag">Retailers</span>
+          <span class="tag">Interior studios</span><span class="tag">Architects</span>
+          <span class="tag">E-commerce</span><span class="tag">Marketing agencies</span>
+          <span class="tag">Furniture businesses</span><span class="tag">Hospitality</span>
+          <span class="tag">Startups</span><span class="tag">Industrial clients</span>
+        </div>
+      </div>
+      <div class="reveal">
+        <ul class="plain">
+          <li>Recurring manufacturing on a fixed schedule</li>
+          <li>Product adjustments between batches</li>
+          <li>Private-label production under your brand</li>
+          <li>Batch production with per-unit quality control</li>
+          <li>Repeat orders without re-quoting</li>
+          <li>Scalable quantities as your sales grow</li>
+          <li>Production planning around your launch dates</li>
+        </ul>
+        <a class="btn" style="margin-top:28px" href="#simulator">Simulate your B2B order</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIMULATOR -->
+<section id="simulator" class="on-grey">
+  <div class="wrap">
+    <div class="section-label reveal">Order simulator</div>
+    <h2 class="reveal">Estimate your production run</h2>
+    <p class="lede reveal" style="margin-bottom:44px">Enter your part and quantity. The simulator returns estimated cost, print time, and completion date. Final quotations follow a design review.</p>
+
+    <div class="sim reveal">
+      <div class="sim-head">
+        <span class="t">B2B Quotation Simulator</span>
+        <span class="est">ALL VALUES ARE ESTIMATES — NOT A FINAL QUOTATION</span>
+      </div>
+      <div class="sim-body">
+        <form class="sim-form" id="simForm">
+          <div class="field full">
+            <label for="simType">Product type</label>
+            <select id="simType">
+              <option value="functional">Functional part / component</option>
+              <option value="enclosure">Enclosure / housing</option>
+              <option value="decor">Decorative / retail product</option>
+              <option value="display">Display / packaging piece</option>
+              <option value="proto">Prototype</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label>3D file (optional)</label>
+            <label class="drop" id="drop">
+              Drop an STL / OBJ / 3MF here, or click to choose
+              <input type="file" id="simFile" accept=".stl,.obj,.3mf,.step,.stp">
+              <div class="file-name" id="fileName"></div>
+            </label>
+          </div>
+          <div class="field full">
+            <label>Dimensions per part — mm (max 256 × 256 × 256)</label>
+            <div class="dims">
+              <input type="number" id="dimX" placeholder="X" min="1" max="256" value="100" aria-label="Width in millimeters">
+              <input type="number" id="dimY" placeholder="Y" min="1" max="256" value="100" aria-label="Depth in millimeters">
+              <input type="number" id="dimZ" placeholder="Z" min="1" max="256" value="100" aria-label="Height in millimeters">
+            </div>
+          </div>
+          <div class="field">
+            <label for="simMat">Material</label>
+            <select id="simMat">
+              <option value="pla">PLA</option>
+              <option value="petg">PETG</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="simColor">Color</label>
+            <select id="simColor">
+              <option>Black</option><option>White</option><option>Grey</option>
+              <option>Custom (on request)</option><option>Multi-color (AMS)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="simQty">Quantity</label>
+            <input type="number" id="simQty" min="1" max="10000" value="50">
+          </div>
+          <div class="field">
+            <label for="simQual">Print quality / layer height</label>
+            <select id="simQual">
+              <option value="0.3">Draft — 0.30 mm</option>
+              <option value="0.2" selected>Standard — 0.20 mm</option>
+              <option value="0.12">Fine — 0.12 mm</option>
+              <option value="0.05">Ultra fine — 0.05 mm</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="simInfill">Infill</label>
+            <select id="simInfill">
+              <option value="0.10">10% — light</option>
+              <option value="0.15" selected>15% — standard</option>
+              <option value="0.25">25% — strong</option>
+              <option value="0.50">50% — heavy duty</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="simFinish">Finishing</label>
+            <select id="simFinish">
+              <option value="0">None</option>
+              <option value="0.4">Support removal + cleanup</option>
+              <option value="0.9">Surface finishing</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="simPack">Packaging</label>
+            <select id="simPack">
+              <option value="0">Bulk (protective fill)</option>
+              <option value="0.35">Individual bags</option>
+              <option value="0.9">Individual boxes</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="simDest">Delivery destination</label>
+            <select id="simDest">
+              <option value="bg">Bulgaria</option>
+              <option value="ro">Romania / Greece</option>
+              <option value="eu">Rest of EU</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="simDate">Desired delivery date (optional)</label>
+            <input type="date" id="simDate">
+          </div>
+        </form>
+        <div class="sim-out" aria-live="polite">
+          <div class="out-row"><span class="k">Est. material / part</span><span class="v" id="outMat">—</span></div>
+          <div class="out-row"><span class="k">Est. unit cost</span><span class="v" id="outUnit">—</span></div>
+          <div class="out-row"><span class="k">Est. print time / part</span><span class="v" id="outTime">—</span></div>
+          <div class="out-row"><span class="k">Est. farm capacity used</span><span class="v" id="outCap">—</span></div>
+          <div class="out-row"><span class="k">Est. packaging</span><span class="v" id="outPack">—</span></div>
+          <div class="out-row"><span class="k">Est. delivery</span><span class="v" id="outShip">—</span></div>
+          <div class="out-row"><span class="k">Est. completion</span><span class="v" id="outDate">—</span></div>
+          <div class="out-row total"><span class="k">Est. total</span><span class="v" id="outTotal">—</span></div>
+          <p class="sim-note">Estimates are indicative and based on typical geometry for the selected size and infill. A final quotation is issued after our team reviews your actual file. Delivery timeframes are approximate.</p>
+          <div class="sim-actions">
+            <a class="btn" id="requestQuote" href="#">Request final quotation</a>
+            <button class="btn ghost" id="downloadSummary" type="button">Download summary</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SANICREATE TEASER -->
+<section class="on-dark">
+  <div class="wrap sc-teaser">
+    <div>
+      <div class="section-label reveal">For individuals</div>
+      <h2 class="reveal">SaniCreate</h2>
+      <p class="lede reveal">Not a B2B buyer? SaniCreate walks you through making one object — describe it, size it, pick a material, see the estimated cost, and send it to us for review.</p>
+      <a class="btn on-white-ghost reveal" style="margin-top:28px" href="sanicreate.html">Open SaniCreate</a>
+    </div>
+    <div class="chat-demo reveal" id="chatDemo" aria-hidden="true">
+      <div class="msg bot">What would you like to make?</div>
+      <div class="msg user">A replacement knob for my kitchen cabinet</div>
+      <div class="msg bot">Functional part. Do you know the dimensions?</div>
+      <div class="msg user">About 35 mm across</div>
+      <div class="msg bot">PETG, 35 mm, black — est. cost and 3-day production. Ready to submit?</div>
+    </div>
+  </div>
+</section>
+
+<!-- BIG CTA -->
+<section class="big-cta">
+  <div class="wrap reveal">
+    <div class="section-label">Ready when you are</div>
+    <h2>SIMULATE YOUR<br>B2B ORDER NOW</h2>
+    <a class="btn big" href="#simulator">Open the simulator</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="/" style="color:#fff">SANIPRINT<span>.COM</span></a>
+        <p>3D print manufacturing. Pleven, Bulgaria. Delivered across Europe.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="who-we-are.html">Who we are</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#b2b">B2B production</a>
+        <a href="sanicreate.html">SaniCreate</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="mailto:saniprintbg@gmail.com">saniprintbg@gmail.com</a>
+        <a href="tel:+359884848474">+359 88 484 8474</a>
+        <a href="https://instagram.com/sani3dprint" rel="noopener" target="_blank">Instagram</a>
+        <a href="https://tiktok.com/@sani_print" rel="noopener" target="_blank">TikTok</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="foot-slogan">CREATE ANYTHING</span>
+      <span class="foot-copy">© <span id="yr"></span> SANIPRINT — PLEVEN, BULGARIA</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+"use strict";
+var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* header */
+var header = document.getElementById('header');
+window.addEventListener('scroll', function(){ header.classList.toggle('scrolled', window.scrollY > 10); }, {passive:true});
+var navToggle = document.getElementById('navToggle'), nav = document.getElementById('mainNav');
+navToggle.addEventListener('click', function(){
+  var open = nav.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', open);
+});
+nav.addEventListener('click', function(e){ if(e.target.tagName==='A') nav.classList.remove('open'); });
+
+/* reveal on scroll */
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+},{threshold:0.12});
+document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+/* typewriter */
+var words = ['prototypes.','products.','replacement parts.','retail displays.','custom components.','small production runs.','white-label products.','anything.'];
+var tEl = document.getElementById('typeTarget'), wi=0, ci=0, del=false;
+function type(){
+  var w = words[wi];
+  if(reduced){ tEl.textContent = 'anything.'; return; }
+  tEl.textContent = w.slice(0, ci);
+  if(!del){ ci++; if(ci > w.length){ del=true; setTimeout(type, w==='anything.'?2600:1400); return; } }
+  else { ci--; if(ci===0){ del=false; wi=(wi+1)%words.length; } }
+  setTimeout(type, del?38:75);
+}
+type();
+
+/* hero: layer-by-layer object (isometric vase-like part) */
+var layersG = document.getElementById('layers'), layerCount = document.getElementById('layerCount'), pctEl = document.getElementById('pct');
+var N = 48, cx = 200, baseY = 396;
+function radius(i){
+  var t = i / (N-1);
+  return 55 + 65*Math.sin(Math.PI * (0.15 + 0.85*t)) * (1 - 0.35*t) + 20*Math.sin(t*6);
+}
+for(var i=0;i<N;i++){
+  var r = radius(i), ry = r*0.32, y = baseY - i*7;
+  var e = document.createElementNS('http://www.w3.org/2000/svg','ellipse');
+  e.setAttribute('cx',cx); e.setAttribute('cy',y);
+  e.setAttribute('rx',r.toFixed(1)); e.setAttribute('ry',ry.toFixed(1));
+  e.setAttribute('class','layer-path');
+  e.setAttribute('stroke', i%4===0 ? '#0a0a0a' : '#6e6e6c');
+  layersG.appendChild(e);
+}
+var layers = layersG.children, li = 0;
+function buildLayer(){
+  if(li >= N){
+    setTimeout(function(){
+      for(var j=0;j<N;j++) layers[j].style.opacity = 0;
+      li = 0; pctEl.textContent='0%'; layerCount.textContent='LAYER 000 / 048';
+      setTimeout(buildLayer, 700);
+    }, 4200);
+    return;
+  }
+  layers[li].style.opacity = 1;
+  li++;
+  layerCount.textContent = 'LAYER ' + String(li).padStart(3,'0') + ' / 048';
+  pctEl.textContent = Math.round(li/N*100) + '%';
+  setTimeout(buildLayer, reduced ? 0 : 130);
+}
+if(reduced){ for(var j=0;j<N;j++) layers[j].style.opacity=1; layerCount.textContent='LAYER 048 / 048'; pctEl.textContent='100%'; }
+else buildLayer();
+
+/* chat demo */
+var demo = document.getElementById('chatDemo');
+var demoIO = new IntersectionObserver(function(es){
+  es.forEach(function(en){
+    if(en.isIntersecting){
+      demoIO.unobserve(en.target);
+      var msgs = en.target.querySelectorAll('.msg');
+      msgs.forEach(function(m,idx){ setTimeout(function(){ m.classList.add('show'); }, reduced?0:idx*650); });
+    }
+  });
+},{threshold:0.3});
+demoIO.observe(demo);
+
+/* simulator */
+var $ = function(id){ return document.getElementById(id); };
+var fmt = function(n){ return '€' + n.toFixed(2); };
+var densities = { pla: 1.24, petg: 1.27 };
+var pricePerG = { pla: 0.055, petg: 0.065 };
+var animState = {};
+
+function animateVal(id, target, formatter){
+  var el = $(id);
+  if(reduced){ el.textContent = formatter(target); return; }
+  var start = animState[id] || 0, t0 = null;
+  animState[id] = target;
+  function step(ts){
+    if(!t0) t0 = ts;
+    var p = Math.min((ts - t0)/400, 1);
+    el.textContent = formatter(start + (target-start)*p);
+    if(p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+function calc(){
+  var x = +$('dimX').value||0, y = +$('dimY').value||0, z = +$('dimZ').value||0;
+  var qty = Math.max(1, +$('simQty').value||1);
+  var mat = $('simMat').value, infill = +$('simInfill').value, layer = +$('simQual').value;
+  var finish = +$('simFinish').value, pack = +$('simPack').value, dest = $('simDest').value;
+  if(!x||!y||!z){ return; }
+  x=Math.min(x,256); y=Math.min(y,256); z=Math.min(z,256);
+
+  // typical printed part occupies ~35% of its bounding box; shell + infill share of that
+  var solidCm3 = (x*y*z)/1000 * 0.35 * (0.30 + infill);
+  var grams = solidCm3 * densities[mat];
+  var matCost = grams * pricePerG[mat];
+
+  // time: base extrusion rate scaled by layer height (finer = slower)
+  var hours = solidCm3 * 0.055 * (0.2/layer);
+  hours = Math.max(hours, 0.3);
+
+  var machineCost = hours * 1.1;
+  var unit = matCost + machineCost + finish;
+  if(qty >= 500) unit *= 0.82; else if(qty >= 100) unit *= 0.88; else if(qty >= 50) unit *= 0.93;
+  unit = Math.max(unit, 1.2);
+
+  var packCost = pack * qty;
+  var ship = dest==='bg' ? Math.max(6, qty*0.04) : dest==='ro' ? Math.max(12, qty*0.07) : Math.max(18, qty*0.1);
+  var total = unit*qty + packCost + ship;
+
+  // capacity: 8 machines assumed for parallelism estimate; days of printing
+  var totalHours = hours * qty;
+  var farmDays = Math.ceil(totalHours / (8 * 20)); // 8 machines, ~20h/day
+  var prodDays = Math.max(2, farmDays + 1);
+  var shipDays = dest==='bg' ? 1 : dest==='ro' ? 3 : 5;
+  var done = new Date(); done.setDate(done.getDate() + prodDays + shipDays + 1);
+
+  animateVal('outMat', grams, function(v){ return v.toFixed(0)+' g'; });
+  animateVal('outUnit', unit, fmt);
+  $('outTime').textContent = hours < 1 ? Math.round(hours*60)+' min' : hours.toFixed(1)+' h';
+  $('outCap').textContent = '≈ ' + farmDays + (farmDays===1?' farm day':' farm days');
+  animateVal('outPack', packCost, fmt);
+  animateVal('outShip', ship, fmt);
+  $('outDate').textContent = done.toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}) + ' (approx.)';
+  animateVal('outTotal', total, fmt);
+
+  var subject = encodeURIComponent('B2B quotation request — ' + $('simType').options[$('simType').selectedIndex].text);
+  var body = encodeURIComponent(summaryText());
+  $('requestQuote').href = 'mailto:saniprintbg@gmail.com?subject='+subject+'&body='+body;
+}
+
+function summaryText(){
+  return [
+    'SANIPRINT — B2B ORDER SUMMARY (ESTIMATE)',
+    '----------------------------------------',
+    'Product type: ' + $('simType').options[$('simType').selectedIndex].text,
+    'File: ' + ($('fileName').textContent || 'not attached — will send separately'),
+    'Dimensions: ' + $('dimX').value+' × '+$('dimY').value+' × '+$('dimZ').value+' mm',
+    'Material: ' + $('simMat').value.toUpperCase(),
+    'Color: ' + $('simColor').value,
+    'Quantity: ' + $('simQty').value,
+    'Layer height: ' + $('simQual').value + ' mm',
+    'Infill: ' + Math.round(+$('simInfill').value*100) + '%',
+    'Finishing: ' + $('simFinish').options[$('simFinish').selectedIndex].text,
+    'Packaging: ' + $('simPack').options[$('simPack').selectedIndex].text,
+    'Destination: ' + $('simDest').options[$('simDest').selectedIndex].text,
+    'Desired delivery: ' + ($('simDate').value || 'flexible'),
+    '',
+    'Est. material/part: ' + $('outMat').textContent,
+    'Est. unit cost: ' + $('outUnit').textContent,
+    'Est. print time/part: ' + $('outTime').textContent,
+    'Est. completion: ' + $('outDate').textContent,
+    'Est. total: ' + $('outTotal').textContent,
+    '',
+    'All values are estimates, not a final quotation.',
+    'saniprint.com — Pleven, Bulgaria'
+  ].join('\n');
+}
+
+document.getElementById('simForm').addEventListener('input', calc);
+document.getElementById('simForm').addEventListener('change', calc);
+calc();
+
+/* file drop */
+var drop = $('drop'), fileInput = $('simFile');
+fileInput.addEventListener('change', function(){
+  if(fileInput.files[0]) $('fileName').textContent = fileInput.files[0].name;
+});
+['dragover','dragenter'].forEach(function(ev){ drop.addEventListener(ev, function(e){ e.preventDefault(); drop.classList.add('over'); }); });
+['dragleave','drop'].forEach(function(ev){ drop.addEventListener(ev, function(e){ e.preventDefault(); drop.classList.remove('over'); }); });
+drop.addEventListener('drop', function(e){
+  if(e.dataTransfer.files[0]) $('fileName').textContent = e.dataTransfer.files[0].name;
+});
+
+/* download summary */
+$('downloadSummary').addEventListener('click', function(){
+  var blob = new Blob([summaryText()], {type:'text/plain'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'saniprint-b2b-summary.txt';
+  a.click();
+  URL.revokeObjectURL(a.href);
+});
+})();
+</script>
+</body>
+</html>
