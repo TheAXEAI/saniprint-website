@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — SaniPrint</title>
+<meta name="description" content="Contact SaniPrint — 3D print manufacturing in Pleven, Bulgaria. Request a quote by email or phone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header scrolled">
+  <div class="wrap header-inner">
+    <a class="logo" href="index.html">SANIPRINT<span>.COM</span></a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav">MENU</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#b2b">B2B</a>
+      <a href="sanicreate.html">SaniCreate</a>
+      <a href="who-we-are.html">Who we are</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a class="btn" href="index.html#simulator">Start a project</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-hero">
+    <div class="section-label">Contact</div>
+    <h1 style="font-size:clamp(40px,6vw,72px)">Request a quote</h1>
+  </div>
+
+  <div class="b2b-cols" style="padding-bottom:100px;margin-top:0">
+    <div class="prose">
+      <p>Send your file, sketch, or description with the quantity you need. We reply with a printability review and a quotation — usually within one business day.</p>
+      <ul class="plain" style="list-style:none;padding:0">
+        <li><a href="mailto:saniprintbg@gmail.com" style="text-decoration:none;font-family:var(--mono)">saniprintbg@gmail.com</a></li>
+        <li><a href="tel:+359884848474" style="text-decoration:none;font-family:var(--mono)">+359 88 484 8474</a></li>
+        <li>Pleven, Bulgaria</li>
+        <li><a href="https://instagram.com/sani3dprint" target="_blank" rel="noopener" style="text-decoration:none">Instagram — @sani3dprint</a></li>
+        <li><a href="https://tiktok.com/@sani_print" target="_blank" rel="noopener" style="text-decoration:none">TikTok — @sani_print</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="sim">
+        <div class="sim-head"><span class="t">Quick request</span></div>
+        <div style="padding:28px;display:grid;gap:18px" id="quickForm">
+          <div class="field"><label for="qName">Name / company</label><input id="qName" type="text" autocomplete="name"></div>
+          <div class="field"><label for="qEmail">Email</label><input id="qEmail" type="email" autocomplete="email"></div>
+          <div class="field"><label for="qMsg">What do you need made?</label><textarea id="qMsg" rows="5" placeholder="Part, size, quantity, deadline…"></textarea></div>
+          <button class="btn" id="qSend" type="button">Send request</button>
+          <p class="sim-note" id="qNote">Opens your email app with the message pre-filled — nothing is sent without your confirmation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap foot-bottom" style="margin-top:0;border-top:none">
+    <span class="foot-slogan">CREATE ANYTHING</span>
+    <span class="foot-copy">© SANIPRINT — PLEVEN, BULGARIA — <a href="terms.html" style="color:inherit">TERMS</a> · <a href="privacy.html" style="color:inherit">PRIVACY</a></span>
+  </div>
+</footer>
+<script>
+var nt=document.getElementById('navToggle'),nv=document.getElementById('mainNav');
+nt.addEventListener('click',function(){nt.setAttribute('aria-expanded',nv.classList.toggle('open'))});
+document.getElementById('qSend').addEventListener('click',function(){
+  var n=document.getElementById('qName').value.trim(),
+      e=document.getElementById('qEmail').value.trim(),
+      m=document.getElementById('qMsg').value.trim(),
+      note=document.getElementById('qNote');
+  if(!m){note.textContent='Tell us what you need made — one sentence is enough.';return;}
+  var body=encodeURIComponent('Name/company: '+n+'\nReply to: '+e+'\n\n'+m);
+  location.href='mailto:saniprintbg@gmail.com?subject='+encodeURIComponent('Quote request — saniprint.com')+'&body='+body;
+});
+</script>
+</body>
+</html>
