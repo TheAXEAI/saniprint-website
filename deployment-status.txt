@@ -1,0 +1,36 @@
+FAILED
+{
+  "": {
+    "ok": true,
+    "err": "",
+    "names": [
+      "CNAME",
+      "README.md",
+      "contact.html",
+      "index.html",
+      "privacy.html",
+      "sanicreate.html",
+      "styles.css",
+      "terms.html",
+      "who-we-are.html"
+    ]
+  },
+  "index.html": {
+    "ok": true,
+    "err": "",
+    "size": 26026,
+    "sha": "7edf28851184535685d65044e72541200cd8e460"
+  },
+  "assets": {
+    "ok": false,
+    "err": "404 Not Found: The path 'assets' does not exist in the repository 'TheAXEAI/saniprint-website' at ref 'main'. Please verify the file or directory path is correct. Note: Paths are case-sensitive. Try l"
+  },
+  "assets/create-anything-full.mp4": {
+    "ok": false,
+    "err": "404 Not Found: The path 'assets/create-anything-full.mp4' does not exist in the repository 'TheAXEAI/saniprint-website' at ref 'main'. Please verify the file or directory path is correct. Note: Paths "
+  },
+  "assets/saniprint-logo.png": {
+    "ok": false,
+    "err": "404 Not Found: The path 'assets/saniprint-logo.png' does not exist in the repository 'TheAXEAI/saniprint-website' at ref 'main'. Please verify the file or directory path is correct. Note: Paths are ca"
+  }
+}
