@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saniprint.com/sitemap.xml
