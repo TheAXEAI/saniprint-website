@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — SaniPrint</title>
-<meta name="description" content="Contact SaniPrint — 3D print manufacturing in Pleven, Bulgaria. Request a quote by email or phone.">
+<title>Request a B2B Quote — SaniPrint</title>
+<meta name="description" content="Request a B2B 3D printing quotation from SaniPrint in Pleven, Bulgaria. Share your company, part, quantity, technical requirements and deadline.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -18,7 +18,7 @@
     <nav class="main-nav" id="mainNav" aria-label="Main navigation">
       <a href="index.html#services">Services</a>
       <a href="index.html#b2b">B2B</a>
-      <a href="sanicreate.html">SaniCreate</a>
+      <a href="index.html#process">Process</a>
       <a href="who-we-are.html">Who we are</a>
       <a href="contact.html" aria-current="page">Contact</a>
       <a class="btn" href="index.html#simulator">Start a project</a>
@@ -29,12 +29,12 @@
 <main class="wrap">
   <div class="page-hero">
     <div class="section-label">Contact</div>
-    <h1 style="font-size:clamp(40px,6vw,72px)">Request a quote</h1>
+    <h1 style="font-size:clamp(40px,6vw,72px)">Request a B2B quote</h1>
   </div>
 
   <div class="b2b-cols" style="padding-bottom:100px;margin-top:0">
     <div class="prose">
-      <p>Send your file, sketch, or description with the quantity you need. We reply with a printability review and a quotation — usually within one business day.</p>
+      <p>Send your company details, part file or technical brief, target quantity and deadline. We review manufacturability and reply with the next production step.</p>
       <ul class="plain" style="list-style:none;padding:0">
         <li><a href="mailto:saniprintbg@gmail.com" style="text-decoration:none;font-family:var(--mono)">saniprintbg@gmail.com</a></li>
         <li><a href="tel:+359884848474" style="text-decoration:none;font-family:var(--mono)">+359 88 484 8474</a></li>
@@ -47,10 +47,12 @@
       <div class="sim">
         <div class="sim-head"><span class="t">Quick request</span></div>
         <div style="padding:28px;display:grid;gap:18px" id="quickForm">
-          <div class="field"><label for="qName">Name / company</label><input id="qName" type="text" autocomplete="name"></div>
-          <div class="field"><label for="qEmail">Email</label><input id="qEmail" type="email" autocomplete="email"></div>
-          <div class="field"><label for="qMsg">What do you need made?</label><textarea id="qMsg" rows="5" placeholder="Part, size, quantity, deadline…"></textarea></div>
-          <button class="btn" id="qSend" type="button">Send request</button>
+          <div class="field"><label for="qName">Contact name</label><input id="qName" type="text" autocomplete="name"></div>
+          <div class="field"><label for="qCompany">Company</label><input id="qCompany" type="text" autocomplete="organization"></div>
+          <div class="field"><label for="qEmail">Business email</label><input id="qEmail" type="email" autocomplete="email"></div>
+          <div class="field"><label for="qQty">Target quantity / monthly volume</label><input id="qQty" type="text" placeholder="Example: 250 units per month"></div>
+          <div class="field"><label for="qMsg">Project brief</label><textarea id="qMsg" rows="5" placeholder="Part, application, material, tolerances, deadline…"></textarea></div>
+          <button class="btn" id="qSend" type="button">Request B2B quotation</button>
           <p class="sim-note" id="qNote">Opens your email app with the message pre-filled — nothing is sent without your confirmation.</p>
         </div>
       </div>
@@ -69,12 +71,14 @@ var nt=document.getElementById('navToggle'),nv=document.getElementById('mainNav'
 nt.addEventListener('click',function(){nt.setAttribute('aria-expanded',nv.classList.toggle('open'))});
 document.getElementById('qSend').addEventListener('click',function(){
   var n=document.getElementById('qName').value.trim(),
+      c=document.getElementById('qCompany').value.trim(),
       e=document.getElementById('qEmail').value.trim(),
+      q=document.getElementById('qQty').value.trim(),
       m=document.getElementById('qMsg').value.trim(),
       note=document.getElementById('qNote');
-  if(!m){note.textContent='Tell us what you need made — one sentence is enough.';return;}
-  var body=encodeURIComponent('Name/company: '+n+'\nReply to: '+e+'\n\n'+m);
-  location.href='mailto:saniprintbg@gmail.com?subject='+encodeURIComponent('Quote request — saniprint.com')+'&body='+body;
+  if(!c || !m){note.textContent='Add your company and a short project brief.';return;}
+  var body=encodeURIComponent('Contact: '+n+'\nCompany: '+c+'\nBusiness email: '+e+'\nTarget quantity / monthly volume: '+q+'\n\nProject brief:\n'+m);
+  location.href='mailto:saniprintbg@gmail.com?subject='+encodeURIComponent('B2B quotation request — '+c)+'&body='+body;
 });
 </script>
 </body>
